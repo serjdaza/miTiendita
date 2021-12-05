@@ -1,0 +1,46 @@
+*:not(h1) {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: purple;
+}
+
+header i {
+    align-self: center;
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: white;
+}
+
+header h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.shopping {
+    display: flex;
+    flex-direction: column;
+}
+
+.card_icon img {
+    width: 2rem;
+}
+
+table .item_qty {
+    width: 3rem;
+    margin: auto;
+}
+
+table, td, th {
+    border: 1px solid black;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/db9b514b2f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Mi Tiendita</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo_title">Mi Tiendita</h1>
+        <i class="fas fa-store"></i></span>
+    </header>
+    <section class="content">
+        <section id="client_info">
+            <h2>Client Information</h2>
+            <form>
+                <label for="first_name">
+                    <h4>First Name</h4>
+                </label>
+                <div><input type="text" name="first_name" id="first_name">
+                    <div class="input_error" id="first_name_error">This field can't be empty</div>
+                </div>
+                <label for="last_name">
+                    <h4>Last Name</h4>
+                </label>
+                <div><input type="text" name="last_name" id="last_name">
+                    <div class="input_error" id="last_name_error">This field can't be empty</div>
+                </div>
+                <label for="address">
+                    <h4>Address</h4>
+                </label>
+                <div><input type="text" name="address" id="address">
+                    <div class="input_error" id="address_error">This field can't be empty</div>
+                </div>
+                <label for="phone">
+                    <h4>Phone Number</h4>
+                </label>
+                <div><input type="text" name="phone" id="phone">
+                    <div class="input_error" id="phone_error">Please enter a valid phone number format. Must be of the
+                        format: 208-555-5555</div>
+                </div>
+            </form>
+        </section>
+        <section class="shopping">
+            <section id="products">
+                <form>
+                    <h2>Products</h2>
+                    <table>
+                        <tr>
+                            <th>Qty</th>
+                            <th>Article</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="item_qty" type="number" name="item_0" id="item_0" min=0>
+                            </td>
+                            <td>
+                                <span class="item_img" id="item_0_img"></span>
+                                <span class="item_desc" id="item_0_desc">HDMI to VGA converter with audio cable
+                                    port.</span>
+                            </td>
+                            <td>$ <span class="item_price">10.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="item_qty" type="number" name="item_1" id="item_1" min=0>
+                            </td>
+                            <td>
+                                <span class="item_img" id="item_1_img"></span>
+                                <span class="item_desc" id="item_1_desc">Pear USB-C to USB Adapter for HI speed data
+                                    transfer.</span>
+                            </td>
+                            <td>$ <span class="item_price">15.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="item_qty" type="number" name="item_2" id="item_2" min=0>
+                            </td>
+                            <td>
+                                <span class="item_img" id="item_2_img"></span>
+                                <span class="item_desc" id="item_2_desc">Power adapter electric plug charger EU 4.0mm to
+                                    KR 4.8mm.</span>
+                            </td>
+                            <td>$ <span class="item_price">8.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="item_qty" type="number" name="item_3" id="item_3" min=0>
+                            </td>
+                            <td>
+                                <span class="item_img" id="item_3_img"></span>
+                                <span class="item_desc" id="item_3_desc">Type-C HDMI USB adapter for Pear myPad Pro -
+                                    Made in Bogotá</span>
+                            </td>
+                            <td>$ <span class="item_price">22.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="item_qty" type="number" name="item_4" id="item_4" min=0>
+                            </td>
+                            <td>
+                                <span class="item_img" id="item_4_img"></span>
+                                <span class="item_desc" id="item_4_desc">Pear Magic Mouse 2 Bluetooth for Pacbook
+                                    Pro</span>
+                            </td>
+                            <td>$ <span class="item_price">18.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>TOTAL</h3>
+                            </td>
+                            <td>
+                                Purchased items:
+                                <ul id="purchased">
+
+                                </ul>
+                            </td>
+                            <td>$ <span class="total"></span></td>
+                        </tr>
+                    </table>
+                </form>
+            </section>
+            <section id="payment">
+                <h2>Payment</h2>
+                <form>
+                    <h3>Credit Card Information</h3>
+                    <h4>Credit Card Type</h4>
+                    <input type="radio" id="visa" name="card">
+                    <label for="visa">Visa <span class="card_icon" id="visa_icon"><img src="visa.jpg"
+                                alt="visa card icon"></span></label>
+                    <input type="radio" id="master" name="card">
+                    <label for="master">Mastercard <span class="card_icon" id="master_icon"><img src="master.jpg"
+                                alt="mastercard icon"></span></label>
+                    <input type="radio" id="express" name="card">
+                    <label for="express">American Express <span class="card_icon" id="express_icon"><img
+                                src="express.jpg" alt="american express icon"></span></label>
+                    <input type="radio" id="codensa" name="card">
+                    <label for="codensa">Codensa <span class="card_icon" id="codensa_icon"><img src="codensa.jpg"
+                                alt="codensa card icon"></span></label><br>
+                    <label for="credit_card">
+                        <h4>Credit Card #</h4>
+                    </label>
+                    <div><input type="text" name="credit_card" id="credit_card">
+                        <div class="input_error" id="credit_card_error">Please enter a valid credit card. It must be 16
+                            digits and the format: 1111 1111 1111 1111</div>
+                    </div>
+                    <label for="exp_date">
+                        <h4>Credit Card Expiration Date</h4>
+                    </label>
+                    <div><input type="text" name="exp_date" id="exp_date">
+                        <div class="input_error" id="exp_date_error">Please enter a valid date. It must be the format
+                            mm/yyyy</div>
+                    </div>
+                </form>
+            </section>
+            <section>
+                <button onclick="resetForm()">Clear</button>
+                <input type="submit" onclick="" value="Submit">
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>
